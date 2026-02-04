@@ -1,7 +1,9 @@
 const express = require('express'); // import alike
+const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
+app.use(cors()); //solo para dev, en prod configurar como es debido.
 app.use(express.json());
 
 //fake data
